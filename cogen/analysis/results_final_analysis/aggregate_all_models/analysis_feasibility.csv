@@ -1,0 +1,14 @@
+BPMN Agent Research Metrics - Feasibility Analysis
+
+Research Question,Metric,Availability,Calculation Method,Notes
+RQ1: Agentic Impact,Pass Rate,Available,Direct from test results,Compares agentic vs monolithic
+RQ1: Agentic Impact,First-Attempt Correctness,Available,success_first_try field,Measures initial generation quality
+RQ1: Agentic Impact,Violation Distribution,Available,validation_category + error_categories,Full breakdown by level
+RQ1: Agentic Impact,Agent-Specific Contribution,Partial,Inferred from rules_violated,No direct per-agent tracking; requires re-instrumentation
+RQ2: Validation Efficiency,Repair Iteration Count,Available,Calculated from validation_history,"Mean, median, 95th percentile"
+RQ2: Validation Efficiency,Convergence Rate,Available,iterations_to_pass field,% passing within N iterations
+RQ2: Validation Efficiency,Error Detection by Level,Available,Parse validation_errors,Identifies which level caught errors
+RQ2: Validation Efficiency,Repair Difficulty,Available,iterations_to_pass by error_category,Mean iterations per error type
+RQ2: Validation Efficiency,Validation Overhead,Available,execution_time + token_count_estimate,Time and token cost per validation
+RQ3: CoT Feedback,Self-Correction Rate,Available,self_corrected field,Scenarios passing after repair
+RQ3: CoT Feedback,First-Repair Success,Available,Calculated from validation_history,% fixed on first repair

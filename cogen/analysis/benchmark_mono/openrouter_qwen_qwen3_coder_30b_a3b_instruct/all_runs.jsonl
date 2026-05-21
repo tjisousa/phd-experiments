@@ -1,0 +1,1 @@
+{"run_id": "openrouter_qwen_qwen3_coder_30b_a3b_instruct_20251020_162901", "model_name": "openrouter/qwen/qwen3-coder-30b-a3b-instruct", "tools_used": ["validate_process"], "timestamp": "2025-10-20T16:51:26.090803", "total_tests": 40, "passed": 22, "failed": 18}

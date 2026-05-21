@@ -1,0 +1,29 @@
+RQ1: Agentic Impact on Semantic Conformance
+
+Section,Metric,Agentic,Monolithic,Delta
+Overall,Pass Rate (%),84.2,46.4,+37.8
+Overall,First-Attempt Success (%),25.0,5.8,+19.2
+
+Violation Distribution by Validation Category
+Category,Agentic Count,Monolithic Count,Agentic Pass Rate (%),Monolithic Pass Rate (%)
+Syntax,63,62,95.2,53.2
+Semantics,54,54,88.9,50.0
+Event Rules,54,53,88.9,49.1
+Structural,72,70,87.5,48.6
+Topological,70,67,75.7,44.8
+Integration,43,42,72.1,40.5
+
+Element Type Contribution (Inferred from Rules Violated)
+Element Type,Violations Count,Test Count,Violation Rate (%)
+StartEvent,43,360,11.9
+EndEvent,30,360,8.3
+Task,58,360,16.1
+Gateway,68,360,18.9
+IntermediateEvent,19,360,5.3
+
+NOTES
+Metric,Availability,Notes
+Pass Rate Comparison,Available,Direct comparison from test results
+First-Attempt Correctness,Available,From success_first_try field
+Violation Distribution,Available,From validation_category and error_categories
+Precise Agent Attribution,Partial,Inferred from rules_violated; no direct per-agent tracking

@@ -1,0 +1,22 @@
+Metric,Value
+Total Tests,360
+Passed,167
+Failed,193
+Pass Rate (%),46.39
+Average Execution Time (s),63.97
+Average Tokens,625
+Average Iterations,9.64
+Average Validation Attempts,2.54
+Average Repair Attempts,1.99
+Average Validation Retries,4.47
+Repair Success Rate (%),10.14
+Success First Try Rate (%),5.83
+Self-Correction Rate (%),3.89
+
+Category,Total,Passed,Pass Rate (%),Avg Time (s),Avg Tokens,Avg Repair Attempts,Avg Validation Retries
+syntax,63,33,52.38,78.15,481,3.73,7.03
+semantics,54,27,50.00,57.56,642,2.22,4.59
+event_rules,54,26,48.15,63.88,804,2.44,4.93
+structural,72,34,47.22,68.16,555,2.04,4.42
+topological,72,30,41.67,50.15,642,0.78,2.83
+integration,45,17,37.78,67.29,680,0.58,2.93

@@ -1,0 +1,1 @@
+{"run_id": "gemini_2.5_pro_20251019_195245", "model_name": "gemini-2.5-pro", "tools_used": ["validate_process", "get_bpmn_examples"], "timestamp": "2025-10-19T20:29:21.657221", "total_tests": 40, "passed": 39, "failed": 1}

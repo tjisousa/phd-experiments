@@ -1,0 +1,48 @@
+RQ2: Validation Efficiency
+
+Overall Comparison: Agentic vs Monolithic
+Metric,Agentic,Monolithic,Delta
+Avg Validation Attempts,1.54,2.54,-0.99
+Avg Execution Time (s),86.42,63.97,+22.45
+Avg Repair Attempts,0.66,1.99,-1.33
+
+Repair Iteration Statistics (Agentic Approach)
+Metric,Value,Unit
+Mean Repair Iterations,0.66,iterations
+Median Repair Iterations,0.0,iterations
+95th Percentile,3,iterations
+Min Repair Iterations,0,iterations
+Max Repair Iterations,9,iterations
+
+Convergence Rate (% Passing Within N Iterations)
+Iteration Threshold,Pass Rate (%),Count
+Within 1,24.4,74
+Within 3,54.1,164
+Within 5,58.4,177
+Within 10,59.1,179
+
+Error Detection by Validation Level
+Validation Level,Errors Detected,Percentage (%)
+Syntax,59,23.6
+Static Semantics,191,76.4
+Event Rules,0,0.0
+Structural Rules,0,0.0
+Advanced Structural Rules,0,0.0
+Topological Rules,0,0.0
+Reachability,0,0.0
+
+Repair Difficulty by Error Type
+Error Category,Mean Iterations to Fix,Test Count
+Syntax,2.55,105
+Semantics,2.55,105
+Event,2.55,105
+Structural,2.55,105
+Topological,2.55,105
+
+Validation Overhead
+Metric,Value,Unit
+Avg Execution Time,86.42,seconds
+Avg Tokens per Test,844,tokens
+Avg Validations per Test,1.5,validations
+Avg Time per Validation,56.06,seconds
+Avg Tokens per Validation,547,tokens
